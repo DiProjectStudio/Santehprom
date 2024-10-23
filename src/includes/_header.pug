@@ -1,0 +1,31 @@
+block header
+    header#header.header
+        .container
+            .header__inner
+                a(href='/').header__logo
+                    include ../assets/images/logo.svg
+                .header__nav#navMenu
+                    nav
+                        ul
+                            li
+                                a(href='javascript:void(0)') Главная
+                            li
+                                a(href='javascript:void(0)') О компании
+                            li
+                                a(href='javascript:void(0)') Продукция
+                            li
+                                a(href='javascript:void(0)') Доставка и оплата
+                            li
+                                a(href='javascript:void(0)') Контакты
+                .header__socials
+                    a(href='javascript:void(0)').header__socials-whatsapp
+                        include ../assets/images/whatsapp.svg
+                    a(href='javascript:void(0)').header__socials-telegram
+                        include ../assets/images/telegram.svg
+                .header__cart(data-item="0")
+                    include ../assets/images/cart-shopping.svg
+                .header__contacts
+                    a(href='tel:74957301153').header__contacts-phone +7 (495) 730-11-53
+                    a(href='mailto:info@santehprom-r.ru').header__contacts-mail info@santehprom-r.ru
+                .header__burger#navbarToggler
+                    include ../assets/images/bars.svg

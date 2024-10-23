@@ -1,0 +1,45 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black-secondary: #6E6E6C;
+    --color-black: #2B2A29;
+    --color-black-tertiary: #999997;
+    --color-black-stroke: #EAEAEA;
+    --color-blue-stroke: #DDE6EF;
+    --color-orange-accent: #FF6600;
+    --color-orange-accent-hover: #D94903;
+    --color-blue-accent: #005DB4;
+    --color-blue-accent-hover: #00509C;
+    --color-blue-subdied: #C4D7E8;
+    --color-blue-linear: linear-gradient(90deg, #005DB4 43.79%, #077FEF 90.4%);
+    --color-white-subdied: #FFFFFF80;
+    --color-blue-dark: #223F5A;
+    --color-yellow: #FFD43A;
+    --color-blue-tertiary: #ECF2F0;
+    --color-green: #0C9C00;
+    --color-green-subdied: #0C9C001A;
+    --color-green-hover: #0C9C001A;
+}
+
+$white: var(--color-white);
+$black-secondary: var(--color-black-secondary);
+$black: var(--color-black);
+$black-tertiary: var(--color-black-tertiary);
+$black-stroke: var(--color-black-stroke);
+$blue-stroke: var(--color-blue-stroke);
+$orange-accent: var(--color-orange-accent);
+$orange-accent-hover: var(--color-orange-accent-hover);
+$blue-subdied: var(--color-blue-subdied);
+$blue-linear: var(--color-blue-linear);
+$white-subdied: var(--color-white-subdied);
+$blue-dark: var(--color-blue-dark);
+$yellow: var(--color-yellow);
+$blue-tertiary: var(--color-blue-tertiary);
+$green: var(--color-green);
+$green-subdied: var(--color-green-subdied);
+$green-hover: var(--color-green-hover);
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+:root {
+  --font-family-main: 'Open Sans', sans-serif;
+}
+
+$mainFont: var(--font-family-main);
+
+body {
+  font-family: $mainFont;
+  font-weight: 400;
+  color: $black;
+  font-size: 16px;
+}
