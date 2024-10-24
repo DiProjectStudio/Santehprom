@@ -1,0 +1,144 @@
+.main {
+  &__inner {
+    height: 567px;
+    width: 100%;
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    isolation: isolate;
+    z-index: 1;
+    padding: 44px 13px 6px;
+    display: grid;
+    justify-items: center;
+
+    @include breakpoint(md) {
+      height: 343px;
+      padding: 42px 59px 61px;
+      justify-items: unset;
+    }
+
+    @include breakpoint(lg) {
+      height: 400px;
+      padding: 60px 95px;
+    }
+
+    @include breakpoint(xl) {
+      padding: 60px 115px;
+    }
+  }
+
+  &__image {
+    height: 159px;
+    width: auto;
+
+    @include breakpoint(md) {
+      position: absolute;
+      right: -73px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 248px;
+    }
+
+    @include breakpoint(lg) {
+      right: 98px;
+      height: 313px;
+    }
+
+    @include breakpoint(xl) {
+      right: 176px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    scale: 1.4;
+
+    @include breakpoint(md) {
+      scale: 2;
+    }
+
+    @include breakpoint(lg) {
+      scale: 1;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.48) 6.09%, rgba(0, 0, 0, 0.13) 88.51%);
+      pointer-events: none;
+    }
+  }
+}
+
+.main__text {
+  @include flexColumn;
+  text-align: center;
+  color: $white;
+  align-items: center;
+
+  @include breakpoint(md) {
+    text-align: unset;
+    align-items: unset;
+  }
+
+  h1.main__text-title {
+    margin-bottom: 16px;
+    color: $white;
+
+    @include breakpoint(md) {
+      max-width: 467px;
+    }
+
+    @include breakpoint(lg) {
+      max-width: 538px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-subtitle {
+    margin-bottom: 32px;
+
+    @include breakpoint(md) {
+      max-width: 467px;
+      font-size: 18px;
+    }
+
+    @include breakpoint(lg) {
+      max-width: 490px;
+      font-size: 20px;
+    }
+  }
+
+  &-buttons {
+    @include flexColumn;
+    gap: 12px;
+    margin-bottom: 18px;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+    }
+
+    a.btn {
+      width: 254px;
+      padding: 18px 0;
+
+      @include breakpoint(md) {
+        width: fit-content;
+        padding: 18px 28px;
+      }
+    }
+  }
+
+
+}

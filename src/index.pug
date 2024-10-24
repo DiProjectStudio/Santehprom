@@ -9,4 +9,14 @@ extends includes/_page
 block main
     section.main
         .container
-            
+            .main__inner
+                .main__text
+                    h1.main__text-title Кожухи для стальных конвекторов КСК
+                    .main__text-subtitle Предлагаем весь перечень размеров кожухов для конвекторов КСК Универсал и Мини
+                    .main__text-buttons
+                        a(href='javascript:void(0)').btn.btn--orange Заказать кожух
+                        a(href='javascript:void(0)').btn.btn--white Смотреть каталог
+                .main__image
+                        +img('main.png')
+                .main__bg
+                    +img('main-bg.jpg')
