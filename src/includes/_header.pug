@@ -4,7 +4,7 @@ block header
             .header__inner
                 a(href='/').header__logo
                     include ../assets/images/logo.svg
-                .header__nav#navMenu
+                .header__nav
                     nav
                         ul
                             li
@@ -17,15 +17,18 @@ block header
                                 a(href='javascript:void(0)') Доставка и оплата
                             li
                                 a(href='javascript:void(0)') Контакты
+                .header__navbar-close#navbarClose
+                    +img('xmark.svg')
                 .header__socials
                     a(href='javascript:void(0)').header__socials-whatsapp
                         include ../assets/images/whatsapp.svg
                     a(href='javascript:void(0)').header__socials-telegram
                         include ../assets/images/telegram.svg
-                .header__cart(data-item="0")
+                .header__cart(data-count="0")
                     include ../assets/images/cart-shopping.svg
                 .header__contacts
                     a(href='tel:74957301153').header__contacts-phone +7 (495) 730-11-53
                     a(href='mailto:info@santehprom-r.ru').header__contacts-mail info@santehprom-r.ru
                 .header__burger#navbarToggler
                     include ../assets/images/bars.svg
+

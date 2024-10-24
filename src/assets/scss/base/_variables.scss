@@ -18,6 +18,7 @@
     --color-green: #0C9C00;
     --color-green-subdied: #0C9C001A;
     --color-green-hover: #0C9C001A;
+    --transition: .3s ease-in-out;
 }
 
 $white: var(--color-white);
@@ -28,6 +29,8 @@ $black-stroke: var(--color-black-stroke);
 $blue-stroke: var(--color-blue-stroke);
 $orange-accent: var(--color-orange-accent);
 $orange-accent-hover: var(--color-orange-accent-hover);
+$blue-accent: var(--color-blue-accent);
+$blue-accent-hover: var(--color-blue-accent-hover);
 $blue-subdied: var(--color-blue-subdied);
 $blue-linear: var(--color-blue-linear);
 $white-subdied: var(--color-white-subdied);
@@ -37,6 +40,7 @@ $blue-tertiary: var(--color-blue-tertiary);
 $green: var(--color-green);
 $green-subdied: var(--color-green-subdied);
 $green-hover: var(--color-green-hover);
+$transition: var(--transition);
 
 
 

@@ -61,6 +61,10 @@
 
   }
 
+  &__navbar-close {
+    display: none;
+  }
+
   &__socials {
     @include flexAlignCenter;
     gap: 12px;
@@ -87,6 +91,7 @@
           transform: rotate(90deg) translateX(46%);
           top: 0;
           right: -17px;
+          pointer-events: none;
 
           @include breakpoint(xl) {
             right: -21px;
@@ -120,7 +125,7 @@
 
     &:after {
       position: absolute;
-      content: attr(data-item);
+      content: attr(data-count);
       width: 14px;
       height: 14px;
       background-color: $orange-accent;
@@ -175,6 +180,120 @@
 
     @include breakpoint(lg) {
       display: none;
+    }
+  }
+}
+
+.navbar-js {
+  display: grid;
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: -200%;
+  //left: 0;
+  height: 100%;
+  width: 80vw;
+  justify-content: space-between;
+  padding: 32px;
+  z-index: 0;
+  transition: .4s ease;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(md) {
+    width: 100%;
+
+    top: 200%;
+    height: calc(100% - 80px);
+    left: 0;
+  }
+
+  &.opened {
+    left: 0;
+
+    @include breakpoint(md) {
+      top: 80px;
+    }
+
+    &:before {
+      display: block;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: none;
+    position: absolute;
+    background-color: #000000B2;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(100%);
+
+    @include breakpoint(md) {
+      transform: unset;
+      height: 80px;
+      top: -80px;
+    }
+  }
+
+  .header__logo {
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
+  .header__nav {
+    display: block;
+    align-self: center;
+
+    ul {
+      display: grid;
+      gap: 28px;
+
+      @include breakpoint(md) {
+        justify-content: center;
+        justify-items: center;
+      }
+    }
+  }
+
+  .header__contacts {
+    justify-self: flex-start;
+    grid-column: unset;
+    align-content: flex-end;
+
+    @include breakpoint(md) {
+      justify-self: center;
+      justify-items: center;
+    }
+
+    &-mail {
+      display: block;
+    }
+  }
+
+  .header__navbar-close {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: $blue-accent;
+    border-radius: 50%;
+    @include flexCenterCenter;
+    top: 13px;
+    right: -8px;
+    transform: translateX(100%);
+
+    img {
+      width: 13px;
+      height: auto;
+    }
+
+    @include breakpoint(md) {
+      transform: translateX(0) translateY(-100%);
+      right: 22px;
+      top: -13px;
     }
   }
 }
