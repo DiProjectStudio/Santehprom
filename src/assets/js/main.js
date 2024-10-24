@@ -10,6 +10,13 @@ $(document).ready(function () {
       return pastedValue.replace(/^8/, '');
     }
   });
+  actualYear();
 });
 
 
+function actualYear() {
+  const actualDate = new Date();
+  const year = actualDate.getFullYear();
+  const footerDate = document.querySelector('.footer__rights span');
+  footerDate.innerText = year;
+}

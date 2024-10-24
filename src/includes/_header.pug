@@ -1,3 +1,5 @@
+include _mixins
+
 block header
     header#header.header
         .container
@@ -18,17 +20,17 @@ block header
                             li
                                 a(href='javascript:void(0)') Контакты
                 .header__navbar-close#navbarClose
-                    +img('xmark.svg')
+                    include ../assets/images/icon_xmark.svg
                 .header__socials
                     a(href='javascript:void(0)').header__socials-whatsapp
-                        include ../assets/images/whatsapp.svg
+                        include ../assets/images/icon_whatsapp.svg
                     a(href='javascript:void(0)').header__socials-telegram
-                        include ../assets/images/telegram.svg
+                        include ../assets/images/icon_telegram.svg
                 .header__cart(data-count="0")
-                    include ../assets/images/cart-shopping.svg
+                    include ../assets/images/icon_cart-shopping.svg
                 .header__contacts
                     a(href='tel:74957301153').header__contacts-phone +7 (495) 730-11-53
                     a(href='mailto:info@santehprom-r.ru').header__contacts-mail info@santehprom-r.ru
                 .header__burger#navbarToggler
-                    include ../assets/images/bars.svg
+                    include ../assets/images/icon_bars.svg
 

@@ -2,15 +2,47 @@ block footer
     footer#footer.footer
         .container
             .footer__inner
+                .footer__top
+                    .footer__feedback
+                        .feedback__title Остались вопросы? Оставьте заявку и мы свяжемся с вами
+                        a(href='javascript:void(0)').feedback__button.btn.btn--orange Оставить заявку
+                        .feedback__socials
+                            a(href='javascript:void(0)').feedback__socials-whatsapp
+                                include ../assets/images/icon_whatsapp.svg
+                            a(href='javascript:void(0)').feedback__socials-telegram
+                                include ../assets/images/icon_telegram.svg
+                    .footer__contacts
+                        .footer__contacts-address г. Москва, ул. Амурская , д.9/6
+                        .footer__contacts-connect
+                            a(href='tel:74957301153').footer__contacts-phone +7 (495) 730-11-53
+                            a(href='mailto:info@santehprom-r.ru').footer__contacts-mail info@santehprom-r.ru
+                        .footer__contacts-tax
+                            p ОГРН 1137746581015
+                            p ИНН 7718939664
+                            p ОКПО 17817969
+                    .footer__maps
+                        script.
+                            let placemarks = [
+                                {
+                                    coordinates: [55.81087556890965,37.770986499999964],
+                                }
+                            ];
+                            let centerPoint = [55.81087556890965,37.770986499999964];
+                            let zoomValue = 16;
+                        .map__wrapper
+                            #map
 
+                .footer__middle
+                    .footer__middle-logo
+                        include ../assets/images/logo-white.svg
+                    .footer__middle-text
+                        p Предложение не является публичной офертой. Цены на сайте и в розничной сети могут отличаться. Информация на сайте о товаре носит рекламный характер и расценивается как приглашение делать оферты на основании п.1 ст. 437 Гражданского кодекса РФ.
 
+                .footer__bottom
+                    .footer__devs
+                        a(href="https://di-project.studio/") Сделано в
+                        span  Di-Project.Studio
+                    .footer__rights © Все права защищены <span></span>
+                    .footer__policy
+                        a(href="policy.html").footer__title.link.link--white-opacity Политика конфиденциальности
 
-
-                //.footer__bottom
-                //    .footer__policy
-                //        a(href="policy.html").footer__title.link.link--white-opacity Политика конфиденциальности
-                //
-                //    .footer__devs
-                //        a(href="https://di-project.studio/") Разработка сайта:
-                //        span  Di-Project.Studio
-                //    .footer__company

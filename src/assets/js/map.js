@@ -19,15 +19,11 @@ $(document).ready(function () {
 
 
             $.each(placemarks, function (index, obj) {
-                let myPlacemark = new ymaps.Placemark(obj.coordinates,
+                let myPlacemark = new ymaps.Placemark(obj.coordinates, {},
                     {
-                        // iconLayout: 'default#image',
-                        // iconImageHref: 'assets/images/icon_pointmark.svg',
-                        // iconImageSize: [40, 40],
-                        iconContent: 'Управление механизации 333'
-                    },
-                    {
-                        preset: 'islands#blueStretchyIcon'
+                        iconLayout: 'default#image',
+                        iconImageHref: 'assets/images/icon_placemark.svg',
+                        iconImageSize: [34, 56],
                     }
                 );
 

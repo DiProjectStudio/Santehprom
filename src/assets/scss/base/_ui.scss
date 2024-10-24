@@ -144,6 +144,31 @@ input {
 /////////////////////
 
 
+.btn {
+  cursor: pointer;
+  @include flexCenterCenter;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  gap: 6px;
+
+  &:after {
+    content: "";
+    @include flexCenterCenter;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &.btn--orange {
+    background-color: $orange-accent;
+    color: $white;
+
+    &:hover {
+      background-color: $orange-accent-hover;
+    }
+  }
+}
+
 
 /////////////////////
 /// LINKS
@@ -175,6 +200,38 @@ section + section {
 /// TYPOGRAPHY
 /////////////////////
 
+.subtitle {
+  color: $black-tertiary;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+  @include breakpoint(xl) {
+    margin-bottom: 16px;
+  }
+}
+
+h1 {
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%; /* 33.6px */
+
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 48px;
+  }
+}
+
+.item-card {
+  color: #000;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+}
 
 
 /////////////////////
